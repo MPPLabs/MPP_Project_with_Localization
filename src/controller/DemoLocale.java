@@ -1,4 +1,4 @@
-package controller;
+	package controller;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -112,7 +112,6 @@ public class DemoLocale extends HttpServlet {
 		}
 		DBConnection dbConnection = new DBConnection();
 		dbConnection.startConnectionToDB();
-		Connection con=dbConnection.getDBConnection();
 		ResultSet rs;
 		List<Author> authorList = new ArrayList<Author>();
 		try {
@@ -195,7 +194,7 @@ public class DemoLocale extends HttpServlet {
 		List<NewsComment> newsCommentList=new ArrayList<NewsComment>();
 		try{
 			rs=dbConnection.getDataFromDB("lib_news_comment");
-			while(rs.next())
+			while(rs.next())	
 			{
 				NewsComment newsComment = new NewsComment(rs.getInt("lib_news_comment_id"),rs.getString("lib_news_comment_text"+dbDataLanguage),
 						rs.getTimestamp("lib_news_comment_date"),rs.getInt("lib_news_id"),rs.getInt("lib_user_id"));

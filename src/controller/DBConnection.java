@@ -15,7 +15,7 @@ public class DBConnection {
 	{
 		try
 		{
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.jdbc.Driver").newInstance();//переместить в статик область
 			System.out.println("Driver found" );
 		}
 		catch(ClassNotFoundException | InstantiationException | IllegalAccessException e)
@@ -25,7 +25,6 @@ public class DBConnection {
 		String url="jdbc.mysql://localhost/library";
 		String user = "root";
 		String password = "";
-		Connection connection = null;
 		try
 		{
 			//con = DriverManager.getConnection(url,user,password);
