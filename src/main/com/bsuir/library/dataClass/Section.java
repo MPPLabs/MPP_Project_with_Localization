@@ -1,4 +1,4 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 public class Section {
 
@@ -7,13 +7,24 @@ public class Section {
 	private String header;
 	private String description;
 	private int number;
-	
-	public Section(int id,String name,String header, String description,int number)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setName(String name)
+	{
 		this.name=name;
+	}
+	public void setHeader(String header)
+	{
 		this.header=header;
+	}
+	public void setDescription(String description)
+	{
 		this.description=description;
+	}
+	public void setNumber(int number)
+	{
 		this.number=number;
 	}
 	public int getId()

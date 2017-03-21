@@ -1,24 +1,36 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 import java.sql.Timestamp;
 
-public class NewsComment {
+public class News {
+
 	private int id;
+	private String header;
 	private String text;
 	private Timestamp publicateDate;
-	private int newsId;
-	private int userId;
-	public NewsComment(int id,String text,Timestamp publicateDate,int newsId,int userId)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setHeader(String header)
+	{
+		this.header=header;
+	}
+	public void setText(String text)
+	{
 		this.text=text;
+	}
+	public void setPublicateDate(Timestamp publicateDate)
+	{
 		this.publicateDate=publicateDate;
-		this.newsId=newsId;
-		this.userId=userId;
 	}
 	public int getId()
 	{
 		return this.id;
+	}
+	public String getHeader()
+	{
+		return this.header;
 	}
 	public String getText()
 	{
@@ -27,13 +39,5 @@ public class NewsComment {
 	public Timestamp getPublicateDate()
 	{
 		return this.publicateDate;
-	}
-	public int getNewsId()
-	{
-		return this.newsId;
-	}
-	public int getUserId()
-	{
-		return this.userId;
 	}
 }

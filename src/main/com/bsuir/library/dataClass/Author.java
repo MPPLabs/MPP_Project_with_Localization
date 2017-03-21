@@ -1,4 +1,4 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 public class Author {
 	private int id;

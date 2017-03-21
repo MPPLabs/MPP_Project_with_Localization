@@ -1,4 +1,4 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 public class NewsPage {
 
@@ -6,11 +6,20 @@ public class NewsPage {
 	private int newsStatus;
 	private int newsId;
 	private int sectionId;
-	public NewsPage(int id,int newsStatus,int newsId,int sectionId)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setNewsStatus(int newsStatus)
+	{
 		this.newsStatus=newsStatus;
+	}
+	public void setNewsId(int newsId)
+	{
 		this.newsId=newsId;
+	}
+	public void setSectionId(int sectionId)
+	{
 		this.sectionId=sectionId;
 	}
 	public int getId()

@@ -1,11 +1,14 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 public class Genre {
 	private int id;
 	private String genre;
-	public Genre(int id,String genre)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setGenre(String genre)
+	{
 		this.genre=genre;
 	}
 	public int getId()

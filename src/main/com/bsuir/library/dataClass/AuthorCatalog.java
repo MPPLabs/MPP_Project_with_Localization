@@ -1,15 +1,24 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 public class AuthorCatalog {
 	private int id;
 	private int authorStatus;
 	private int sectionId;
 	private int authorId;
-	public AuthorCatalog(int id, int authorStatus,int sectionId,int authorId)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setAuthorStatus(int authorStatus)
+	{
 		this.authorStatus=authorStatus;
+	}
+	public void setSectionId(int sectionId)
+	{
 		this.sectionId=sectionId;
+	}
+	public void setAuthorId(int authorId)
+	{
 		this.authorId=authorId;
 	}
 	public int getId()

@@ -1,15 +1,24 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 public class BookRaiting {
 	private int id;
 	private int raitingCount;
 	private int bookId;
 	private int userId;
-	public BookRaiting(int id,int raitingCount,int bookId,int userId)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setRaitingCount(int raitingCount)
+	{
 		this.raitingCount=raitingCount;
+	}
+	public void setBookId(int bookId)
+	{
 		this.bookId=bookId;
+	}
+	public void setUserId(int userId)
+	{
 		this.userId=userId;
 	}
 	public int getId()

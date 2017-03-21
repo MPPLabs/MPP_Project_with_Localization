@@ -1,19 +1,33 @@
-package dataClass;
+package main.com.bsuir.library.dataClass;
 
 import java.sql.Timestamp;
 
-public class Chat {
+public class Comment {
 
 	private int id;
 	private String text;
 	private Timestamp publicateDate;
+	private int bookId;
 	private int senderId;
-	public Chat(int id,String text,Timestamp publicateDate,int senderId)
+	public void setId(int id)
 	{
 		this.id=id;
+	}
+	public void setText(String text)
+	{
 		this.text=text;
-		this.publicateDate=publicateDate;
+	}
+	public void setBookId(int bookId)
+	{
+		this.bookId=bookId;
+	}
+	public void setSenderId(int senderId)
+	{
 		this.senderId=senderId;
+	}
+	public void setPublicateDate(Timestamp publicateDate)
+	{
+		this.publicateDate=publicateDate;
 	}
 	public int getId()
 	{
@@ -26,6 +40,10 @@ public class Chat {
 	public Timestamp getPublicateDate()
 	{
 		return this.publicateDate;
+	}
+	public int getBookId()
+	{
+		return this.bookId;
 	}
 	public int getSenderId()
 	{
